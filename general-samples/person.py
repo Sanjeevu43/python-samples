@@ -19,9 +19,10 @@ class Person(BaseModel):
 # print(person.name)
 
 person_data = {'name':'Sanjeev','age':40,'is_married':True,'email':'abc@gmail.com','phone_no':1234567890}
+print(type(person_data))
 person = Person(**person_data) # un-packing dict
 print(person)
 
-person1 = Person(name='Sanjeev',age=-1,is_married=True,email='abc@gmail.com',phone_no=1234567890)
-print(person1)
+# person1 = Person(name=20,age=10,is_married=True,email='abc@gmail.com',phone_no=1234567890) # invalid name
+# print(person1)
     

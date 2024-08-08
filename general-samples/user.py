@@ -47,7 +47,7 @@ class User:
 
 user1 = User('Sanjeev',40,29,'abc@gmail.com')
 print(user1)
-user2 = User(name='Bindu',age=38,id=30,email='abc@gmail.com') # should get error but not
+user2 = User(name='Bindu',age=38,id=30,email='abc@gmail.com')
 print(user2)
 
 @dataclass

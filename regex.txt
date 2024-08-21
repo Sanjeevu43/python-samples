@@ -1,0 +1,22 @@
+r"(.+)\s+\((.+)\)": This is the regular expression pattern.
+r": Raw string prefix. This prevents backslashes from being interpreted as escape characters, ensuring the regex works as intended.
+(.+): Matches one or more characters (the Act name) and captures it in group 1.
+\s+: Matches one or more whitespace characters.
+\(: Matches a literal opening parenthesis.
+(.+): Matches one or more characters (the abbreviation) and captures it in group 2.
+\): Matches a literal closing parenthesis.
+
+-----------------
+^\((\d+[a-z]*)\)\s+(.*)$
+
+1. Start of String (^)
+
+2. Opening Parenthesis (\()
+
+3. Capturing Group 1: Number followed by Optional Letters ((\d+[a-z]*))
+
+4. Whitespace (\s+)
+
+5. Capturing Group 2: The Rest of the String ((.*))
+
+6. End of String ($)

@@ -9,6 +9,9 @@ class BaseClass:
     def m2(self) -> None:
         print('Base Class m2() method, can override')
 
+    def m3(self) -> None:
+        print('Base Class m3() method')
+
 class ChildClass(BaseClass):
     # def m1(self) -> None:
     #     print('Child Class m1() method')
@@ -22,6 +25,7 @@ obj1.m2()
 
 obj2: BaseClass = ChildClass()
 obj2.m2()
+obj2.m3()
 
 @final
 class BaseClass2:

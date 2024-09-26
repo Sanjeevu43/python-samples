@@ -1,0 +1,21 @@
+import copy
+
+# In shallow copy If the list contains mutable objects, 
+# changes made to those objects will affect both the original and the copy.
+
+l1 = [1,2,3,4,[100,200]]
+print(l1)
+
+#l2 = l1.__mul__(3)
+
+#l2 = l1.copy() # shallow copy
+l2= copy.copy(l1)  # shallow copy
+#l2= copy.deepcopy(l1) # deep copy, changes will effect only in modified object
+l1[4][0] = 50
+
+#l2.append(5)
+
+#l2.append(5)
+
+print(l1,id(l1))
+print(l2,id(l2))

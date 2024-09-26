@@ -1,0 +1,64 @@
+1) get(key, default=None): Retrieves the value associated with the given key. If the key doesn't exist, it returns the default value (which is None by default).
+    my_dict = {"color": "blue", "size": "medium"}
+    value = my_dict.get("color")  # Output: 'blue'
+    value = my_dict.get("price", "Not Found") # Output: 'Not Found'
+
+2) items(): Returns a view object containing key-value pairs as tuples. Iterating through the view object lets you work with each key-value pair.
+    my_dict = {"animal": "cat", "sound": "meow"}
+    for key, value in my_dict.items():
+        print(f"Key: {key}, Value: {value}")
+
+3) keys(): Returns a view object containing all keys in the dictionary.
+    my_dict = {"fruit": "apple", "color": "red"}
+    for key in my_dict.keys():
+        print(key)
+
+4) values(): Returns a view object containing all values in the dictionary.
+    my_dict = {"name": "John", "age": 25}
+    for value in my_dict.values():
+        print(value)
+
+5) clear(): Removes all items from the dictionary.
+    my_dict = {"name": "Alice", "age": 30}
+    my_dict.clear()
+    print(my_dict)  # Output: {} (empty dictionary)
+
+6) copy(): Creates a shallow copy of the dictionary. Changes to the original dictionary will not affect the copy, and vice versa.
+    original_dict = {"name": "Bob", "city": "New York"}
+    copied_dict = original_dict.copy()
+    copied_dict["city"] = "Los Angeles" 
+    print(original_dict)  # Output: {'name': 'Bob', 'city': 'New York'}
+    print(copied_dict)  # Output: {'name': 'Bob', 'city': 'Los Angeles'}
+
+7) pop(key, default=None): Removes and returns the value associated with the given key. If the key doesn't exist, it returns the default value (which is None by default).
+    my_dict = {"animal": "dog", "sound": "bark"}
+    value = my_dict.pop("sound")  # Output: 'bark'
+    print(my_dict)  # Output: {'animal': 'dog'}
+
+8) popitem(): Removes and returns a randomly selected key-value pair as a tuple.
+    my_dict = {"shape": "square", "color": "green"}
+    key, value = my_dict.popitem()
+    print(key, value)  # Output: (key, value) (randomly chosen pair)
+
+9) setdefault(key, default=None): Returns the value associated with the given key. If the key doesn't exist, it inserts the key with the default value (which is None by default) and then returns the default value.
+    my_dict = {"language": "Python"}
+    value = my_dict.setdefault("version", "3.10") 
+    print(my_dict)  # Output: {'language': 'Python', 'version': '3.10'}
+    print(value)  # Output: '3.10'
+
+10) update(other_dict): Updates the dictionary with key-value pairs from other_dict. If a key already exists in the dictionary, it will be overwritten.
+    my_dict = {"food": "pizza"}
+    update_dict = {"drink": "coke", "food": "pasta"}
+    my_dict.update(update_dict)
+    print(my_dict)  # Output: {'food': 'pasta', 'drink': 'coke'}
+
+
+Other Important Operations
+    len(my_dict): Returns the number of key-value pairs in the dictionary.
+    my_dict[key]: Accesses the value associated with the given key.
+    my_dict[key] = value: Assigns a new value to an existing key or creates a new key-value pair.
+
+Key Points
+    Mutable: Dictionaries are mutable, meaning you can modify their contents after creation.
+    Unordered: Dictionaries don't maintain an order of their key-value pairs.
+    Key Uniqueness: Keys within a dictionary must be unique. If you try to add a duplicate key, the new value will overwrite the old value.

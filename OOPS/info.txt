@@ -1,0 +1,1 @@
+__name, __m1() : name and m1() are private, can use with in class, can't use outside class

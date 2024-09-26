@@ -1,0 +1,50 @@
+List of Python libraries to read and display images in Python
+
+1) OpenCV
+2) Matplotlib
+3) Pillow
+4) Scikit-Image
+5) Tensorflow
+
+OpenCV : two main function
+
+  1) cv2.imread()
+  2) cv2.imshow()
+
+  code 
+  import sys # to access the system
+  import cv2
+  img = cv2.imread("sheep.png", cv2.IMREAD_ANYCOLOR)
+ 
+  while True:
+     cv2.imshow("Sheep", img)
+     cv2.waitKey(0)
+     sys.exit() # to exit from all the processes
+ 
+  cv2.destroyAllWindows() # destroy all windows
+
+  The cv2.waitkey() method waits till we exit or click on the close button.
+  Then call the sys.exit() method to safely exit the technique.
+  Finally, we destroy all the created windows using cv2.destroyAllWindows().
+
+Matplotlib : This package is mainly for data visualization. But, through the plotting techniques, 
+             we can view the image in a graphical format where each pixel lies on 2D x-y axes.
+   main function
+    1) matplotlib.image.imread()
+    2) matplotlib.pyplot.imshow()
+
+    code
+    from matplotlib import pyplot as plt
+    from matplotlib import image as mpimg
+ 
+    plt.title("Sheep Image")
+    plt.xlabel("X pixel scaling")
+    plt.ylabel("Y pixels scaling")
+ 
+    image = mpimg.imread("sheep.png")
+    plt.imshow(image)
+    plt.show()
+
+Pillow : mostly used library
+    open() and show() functions
+

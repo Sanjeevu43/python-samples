@@ -1,0 +1,27 @@
+pydantic --- Data types
+
+dataclasses --- 
+
+configparser ---
+
+dotenv ---  pip install python-dotenv
+
+ast ---
+
+function as object ---
+
+zip --- combine
+
+typing --- Generics
+
+re --- regular expressions
+
+tracemalloc --- Trace memory allocations
+                The tracemalloc module is a debug tool to trace memory blocks allocated by Python.
+
+memory_profiler --- Memory Profiler is a pure Python module that uses the psutil module. It monitors the memory consumption of a 
+                    Python job process. Also, it performs a line-by-line analysis of the memory consumption of the application. 
+
+psutil --- psutil (python system and process utilities) is a cross-platform library for retrieving information on running processes 
+           and system utilization (CPU, memory, disks, network, sensors) in Python. It is useful mainly for 
+           system monitoring, profiling, limiting process resources and the management of running processes.

@@ -1,0 +1,33 @@
+Core List Functions
+
+append(x): Adds an element x to the end of the list.
+extend(iterable): Appends all elements from an iterable (like another list, tuple, or string) to the end of the list.
+insert(i, x): Inserts element x at index i. If i is greater than the list's length, x is appended to the end.
+remove(x): Removes the first occurrence of element x from the list. Raises a ValueError if x is not found.
+pop([i]): Removes and returns the element at index i. If i is not provided, removes and returns the last element.
+index(x, [start, [end]]): Returns the index of the first occurrence of x in the list. Optional start and end arguments specify a search range. Raises a ValueError if x is not found.
+count(x): Returns the number of times x appears in the list.
+sort(key=None, reverse=False): Sorts the list in place. Optionally takes a key function to specify the sorting criteria and a reverse flag to sort in descending order.
+reverse(): Reverses the elements in the list in place.
+copy(): Returns a shallow copy of the list.
+
+===================================================================================================
+Additional List Methods (Derived from Sequence Type)
+
+__len__(): Returns the number of elements in the list.
+__getitem__(i): Returns the element at index i.
+__setitem__(i, x): Assigns element x to index i.
+__delitem__(i): Deletes the element at index i.
+__contains__(x): Returns True if x is in the list, False otherwise.
+__add__(other): Concatenates two lists (creates a new list).
+__mul__(n): Repeats the list n times (creates a new list).
+__iadd__(other): Extends the list by appending elements from another iterable.
+__imul__(n): Repeats the list n times (in-place).
+
+===================================================================================================
+
+Important Notes
+Mutability: Lists are mutable, meaning their contents can be changed after they are created.
+In-Place Modifications: Many list methods modify the list in place (e.g., sort, reverse, extend).
+Shallow Copies: The copy() method creates a shallow copy. If the list contains mutable objects, 
+                changes made to those objects will affect both the original and the copy.

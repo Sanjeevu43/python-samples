@@ -1,0 +1,32 @@
+Three main testng libraries in python
+
+1) unittest --- available in the Python standard library
+2) nose --- need to do pip install
+3) pytest --- need to do pip install, mostly used one
+
+To run
+1) >pytest UnitTesting/test_pytest_exp1.py ---- will give just test file is passed or failed, 
+     in case of fail it willgive failed test case name
+2) pytest UnitTesting/test_pytest_exp1.py -v (v means verbose) --- will give test method also
+ 
+ *************** we can use py.test or pytest *********************
+
+3) py.test ---- will detct test file automatically and run the test cases
+
+4) py.test -v
+
+Note : for 1 & 2 commands test file may or may not start with test but all test function should start with test_ 
+
+Note : for 3 & 4 commands test file and test function should start with test_ 
+
+5) pytest UnitTesting/test_pytest_exp1.py::test_add -v  ---  run particulat test case
+
+6) py.test -v -k "test_mult"   --- run particulat test case
+
+7) py.test -v -m somename ---- run only decorated test cases ( ex: @pytest.mark.somename)
+
+8) py.test -v -x --- test execution will stop after first failure test case (in case of executing multiple test files)
+
+9) py.test -v --tb=no --- if we don't want see failed stack trace info
+
+10) pytest UnitTesting/test_pytest_exp1.py::test_add -v -s --- to execute print statements in console

@@ -1,0 +1,223 @@
+1) capitalize(): Returns a copy of the string with the first character capitalized.
+    text = "hello world"
+    capitalized_text = text.capitalize()
+    print(capitalized_text)  # Output: "Hello world"
+
+2) casefold(): Returns a lowercase version of the string, suitable for case-insensitive comparisons.
+     text = "HELLO WORLD"
+     lower_text = text.casefold()
+     print(lower_text)  # Output: "hello world"
+
+3) lower(): Returns a lowercase version of the string.
+text = "HELLO WORLD"
+lower_text = text.lower()
+print(lower_text)  # Output: "hello world"
+
+4) upper(): Returns an uppercase version of the string.
+text = "hello world"
+upper_text = text.upper()
+print(upper_text)  # Output: "HELLO WORLD"
+
+5) title(): Returns a title-cased version of the string (first letter of each word capitalized).
+text = "hello world"
+title_text = text.title()
+print(title_text)  # Output: "Hello World"
+
+6) isalnum(): Checks if the string consists of only alphanumeric characters.
+text = "abc123"
+is_alnum = text.isalnum()
+print(is_alnum)  # Output: True
+
+7) isalpha(): Checks if the string consists of only alphabetic characters.
+text = "hello"
+is_alpha = text.isalpha()
+print(is_alpha)  # Output: True
+
+8) isdigit(): Checks if the string consists of only digits.
+text = "1234"
+is_digit = text.isdigit()
+print(is_digit)  # Output: True
+
+9) islower(): Checks if the string is all lowercase.
+text = "hello"
+is_lower = text.islower()
+print(is_lower)  # Output: True
+
+10) isupper(): Checks if the string is all uppercase.
+text = "HELLO"
+is_upper = text.isupper()
+print(is_upper)  # Output: True
+
+11) count(substring): Returns the number of occurrences of a substring within the string.
+text = "banana"
+count_a = text.count('a')
+print(count_a)  # Output: 3
+
+12) find(substring): Returns the lowest index in the string where the substring is found. If not found, returns -1.
+text = "Hello World"
+index = text.find("World")
+print(index)  # Output: 6
+
+13) rfind(substring): Returns the highest index in the string where the substring is found. If not found, returns -1.
+text = "Hello World World"
+index = text.rfind("World")
+print(index)  # Output: 12
+
+14) index(substring): Similar to find(), but raises a ValueError if the substring isn't found.
+text = "Hello World"
+index = text.index("world")  # Will raise a ValueError
+
+15) join(iterable): Concatenates elements from an iterable (like a list or tuple) using the string as a separator.
+words = ["Hello", "World"]
+joined_text = " ".join(words)
+print(joined_text)  # Output: "Hello World"
+
+16) endswith(suffix): Checks if the string ends with a specified suffix.
+text = "python.txt"
+is_txt = text.endswith(".txt")
+print(is_txt)  # Output: True
+
+17) startswith(prefix): Checks if the string starts with a specified prefix.
+text = "python.txt"
+is_python = text.startswith("python")
+print(is_python)  # Output: True
+
+18) lstrip(): Removes leading whitespace from the string. (before)
+text = "  Hello World  "
+trimmed_text = text.lstrip()
+print(trimmed_text)  # Output: "Hello World  "
+
+19) rstrip(): Removes trailing whitespace from the string. (after)
+text = "  Hello World  "
+trimmed_text = text.rstrip()
+print(trimmed_text)  # Output: "  Hello World"
+
+20) strip(): Removes leading and trailing whitespace from the string.
+text = "  Hello World  "
+trimmed_text = text.strip()
+print(trimmed_text)  # Output: "Hello World"
+
+21) format(*args, **kwargs): Allows you to insert values into placeholders within the string using a format string. This is very powerful!
+name = "Rama"
+age = 30
+formatted_text = "My name is {} and I am {} years old.".format(name, age)
+print(formatted_text)  # Output: "My name is Alice and I am 30 years old."
+
+22) replace(old, new): Replaces all occurrences of an old substring with a new substring.
+text = "Hello World"
+replaced_text = text.replace("World", "Universe")
+print(replaced_text)  # Output: "Hello Universe"
+
+23) split(separator): Splits the string into a list of substrings based on the separator (defaults to whitespace).
+text = "Hello World"
+words = text.split()
+print(words)  # Output: ['Hello', 'World']
+
+24) splitlines(): Splits the string into a list of lines.
+text = "Hello\nWorld"
+lines = text.splitlines()
+print(lines)  # Output: ['Hello', 'World']
+
+25) swapcase(): Swaps the case of each character in the string (uppercase to lowercase, lowercase to uppercase).
+text = "HeLlO wOrLd"
+swapped_text = text.swapcase()
+print(swapped_text)  # Output: "hElLo WoRlD"
+
+26) partition(separator): Splits the string into three parts: the part before the separator, the separator itself, and the part after the separator.
+text = "Hello World"
+parts = text.partition("World")
+print(parts)  # Output: ('Hello ', 'World', '')
+
+27) rpartition(separator): Similar to partition, but splits from the right side.
+text = "Hello World"
+parts = text.rpartition("World")
+print(parts)  # Output: ('', 'World', 'Hello ')
+
+
+The encode() Method
+    Purpose: The encode() method converts a string object (which represents text in Unicode) into a byte string (a sequence of bytes). 
+    This is necessary when you need to:
+       Store or transmit text data: Many storage formats and communication protocols work with byte sequences, not directly with Unicode characters.
+       Interact with systems that use different encodings: You may encounter files, databases, or other systems that use encodings like ASCII, Latin-1, or other character sets.
+Syntax:
+byte_string = string.encode(encoding="utf-8")
+
+
+string: The original string you want to encode.
+encoding: The encoding to use. This is a string that specifies the character set to be used. It defaults to "utf-8" if not provided.
+
+Common Encodings
+  UTF-8: The most widely used encoding today. It's highly compatible and can represent nearly all characters in the world's languages.
+  ASCII: A limited encoding that can only represent characters in the English alphabet, numbers, and punctuation marks.
+  Latin-1 (ISO-8859-1): Supports most Western European languages.
+  GBK: Used for Chinese Simplified.
+  
+Example
+text = "Hello, world! 👋"
+
+# Encode using UTF-8
+encoded_text = text.encode('utf-8')
+print(encoded_text)  # Output: b'Hello, world! \xe2\x98\xba' (bytes in UTF-8 format)
+
+# Encode using ASCII (will raise an error since it can't handle emoji)
+try:
+    encoded_ascii = text.encode('ascii')
+except UnicodeEncodeError:
+    print("Error: Can't encode emoji in ASCII")
+
+# Decode back to a string
+decoded_text = encoded_text.decode('utf-8')
+print(decoded_text)  # Output: Hello, world! 👋
+
+===============================================================================
+
+String Slicing
+Slicing works by specifying a range of indices within a string. You use square brackets [] and separate the 
+start and end indices with a colon :
+
+string[start:end:step]
+
+Python uses zero-based indexing, meaning the first character is at index 0, the second at index 1, and so on.
+The start index is inclusive, meaning the character at that index is included in the slice.
+The end index is exclusive, meaning the character at that index is not included in the slice.
+
+Omitting Indices:
+  If you omit the start index, it defaults to the beginning of the string (index 0).
+  If you omit the end index, it defaults to the end of the string.
+
+Step Size:
+ You can specify a step size to extract characters at specific intervals.
+ A positive step value extracts characters from left to right.
+ A negative step value extracts characters from right to left.
+
+Ex: Reverse String
+  my_string = "Hello, world!"
+  reversed_string = my_string[::-1]
+  print(reversed_string)  # Output: "!dlrow ,olleH"
+
+Extracting a substring: my_string[5:10] extracts characters from index 5 to 9 (exclusive), resulting in "world".
+Extracting every third character: my_string[::3] extracts every third character, starting from index 0, resulting in "Hl,d!".
+Reversing a substring: my_string[7:12][::-1] reverses the substring "world" to "dlrow".
+
+Benefits of String Slicing:
+  Efficiency: Slicing creates a new string without modifying the original string.
+  Readability: Slicing provides a clear and concise way to extract specific portions of a string.
+  Flexibility: You can use slicing with various combinations of indices and steps to achieve various string manipulations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

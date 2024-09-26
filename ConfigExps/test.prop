@@ -1,0 +1,22 @@
+[META]
+client = "Bank of China"
+tune = 190
+custom_config = "-l eng --oem 3 --psm 6"
+
+[HKCHQ_SMALL]
+is_cheque = 1
+cheque_width = 651
+cheque_height = 299
+date_x1 = 8
+date_y1 = 65
+date_x2 = 460
+date_y2 = 630
+
+[HKCHQ_LARGE]
+is_cheque = 1
+cheque_width = 817
+cheque_height = 353
+date_x1 = 58
+date_y1 = 95
+date_x2 = 587
+date_y2 = 800

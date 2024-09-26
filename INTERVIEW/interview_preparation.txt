@@ -1,0 +1,28 @@
+Topic 1
+    1) String
+    2) List
+    3) Dict
+        OrderDcit
+    4) Set
+    5) Typeing
+    6) Exception
+    7) Builtin Functions
+    8) Enum
+    9) I/O (file read/write)
+
+Topic 2  
+    1) Multithreading
+    2) DB connection
+
+Topic 3
+    1) Numpy
+    2) Pandas
+
+Topic 4
+   1) Logging
+   2) Properties
+   3) Env
+
+Topic 5
+   1) OOP
+

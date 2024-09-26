@@ -1,0 +1,1 @@
+1) A class contains any abstract method (annotated with this @abstractmethod) then we Can't instantiate abstract class

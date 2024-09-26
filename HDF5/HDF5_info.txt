@@ -1,0 +1,10 @@
+HDF5 file stands for Hierarchical Data Format 5. 
+It is an open-source file which comes in handy to store large amount of data. 
+As the name suggests, it stores data in a hierarchical structure within a single file. 
+So if we want to quickly access a particular part of the file rather than the whole file, 
+we can easily do that using HDF5. This functionality is not seen in normal text files 
+hence HDF5 is becoming seemingly popular in fact of being a new concept. 
+To use HDF5, numpy needs to be imported. One important feature is that it can attach metaset to every data 
+in the file thus provides powerful searching and accessing. Let’s get started with installing HDF5 to the computer.
+
+pip install h5py

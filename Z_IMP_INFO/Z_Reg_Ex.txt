@@ -1,0 +1,45 @@
+Python Regular Expressions: A Deep Dive
+    Regular expressions (regex) are powerful tools for pattern matching in text. 
+    They provide a concise and flexible way to search, extract, and manipulate strings based on complex rules. 
+    Here's a detailed explanation of how they work in Python:
+The Basics:
+  What are regular expressions? They are sequences of characters that define a search pattern. These patterns can match specific 
+  characters, sequences of characters, or even complex structures like repeated elements.
+
+  The re module: Python's standard library provides the re module for working with regular expressions.
+
+Key Concepts:
+ 1) Pattern Syntax:
+      a) Literal Characters: Match themselves exactly (e.g., "a", "1", "?").
+      b) Metacharacters: Have special meanings (e.g., ".", "*", "+", "?", "[]", "()").
+            . (Any character): Matches any single character except a newline.
+            * (Zero or more times): Matches the preceding character zero or more times.
+            + (One or more times): Matches the preceding character one or more times.
+            ? (Zero or one time): Matches the preceding character zero or one time.
+            [] (Character set): Matches any single character within the set.
+            () (Grouping): Groups parts of the pattern together for later reference.
+             \ (Escape): Escapes special characters (e.g., \d matches a digit).
+      c) Character Classes:
+            \d: Matches any digit (0-9).
+            \D: Matches any non-digit character.
+            \s: Matches any whitespace character (space, tab, newline).
+            \S: Matches any non-whitespace character.
+            \w: Matches any word character (letters, digits, underscore).
+            \W: Matches any non-word character.
+ 2) Regular Expression Functions:
+    a) re.search(pattern, string): Scans the string for a match to the pattern and returns a match object if successful, otherwise None.
+    b) re.match(pattern, string): Matches the pattern only at the beginning of the string. Returns a match object if successful, otherwise None.
+    c) re.findall(pattern, string): Returns a list of all non-overlapping matches in the string.
+    d) re.split(pattern, string): Splits the string at every occurrence of the pattern.
+    e) re.sub(pattern, repl, string): Replaces all occurrences of the pattern in the string with the replacement text repl.
+    f) re.compile(pattern): Compiles the pattern into a reusable regex object, which can improve performance for repeated matching.. (matches any character)
+
+* (matches zero or more occurrences of the preceding character)
++ (matches one or more occurrences of the preceding character)
+? (matches zero or one occurrence of the preceding character)
+\d (matches a digit)
+\w (matches a word character)
+\s (matches whitespace)
+[] (defines a character class)
+() (groups expressions)
+

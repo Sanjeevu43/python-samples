@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-img_file = 'C:/Users/PenikalS/Desktop/RaFTS/LAR_CAR/Cheque_New/JPG/AFFIN.jpg'
+img_file = ''
 
 img1 = cv2.imread(img_file)
 print('******************Image Type:',type(img1))

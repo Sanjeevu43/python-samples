@@ -8,7 +8,7 @@ msg = "HELLO WORLD"
 
 new_msg = msg.casefold().capitalize()
 print(new_msg)
-
+print("------------------------")
 name = "Alice"
 age = 30
 #formatted_text = "My name is {} and I am {} years old.".format(name, age)

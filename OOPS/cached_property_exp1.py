@@ -10,5 +10,6 @@ class Circle:
         return 3.14 * self.radius ** 2
 
 obj = Circle(5)
+#obj1 = Circle(5)
 print(obj.find_area)
 print(obj.find_area)

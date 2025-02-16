@@ -7,3 +7,42 @@ l.extend([30])
 l.extend((40,))
 
 print(l)
+
+#reverse,sort, desending
+ll = [6,8,7,1,5,4,2,9,3]
+print(ll,'#')
+ll.reverse()
+print(ll,'#')
+ll.sort()
+print(ll,'#')
+ll.sort(reverse=True)
+print(ll)
+
+lll = [5,1,3,2,4,3]
+lll = sorted(lll) # builtin function
+print(lll)
+print(lll.count(6))
+#==========================================================================================
+
+l1 = [1,2,3]
+l2 = [1,3,1]
+l3 = [1,2,3]
+
+print(l1==l2)
+print(l1==l3)
+
+# print(com(l1,l2))
+# print(l1==l3)
+
+print(l1 is l2)
+print(l1 is l3)
+l1=l3
+print(l1 is l3)
+
+
+
+
+
+
+
+

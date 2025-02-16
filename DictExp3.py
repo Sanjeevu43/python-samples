@@ -13,3 +13,10 @@ def two():
     print(test_name)
 
 one()
+
+
+name = 'Sanjeevu'
+print("My name is {}".format(name))
+print(f"My name is: {name}")
+print('#########################################################################################################')
+print("My name is %s" %name)

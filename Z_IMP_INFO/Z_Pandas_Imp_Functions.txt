@@ -1,0 +1,231 @@
+I. Data Loading & Saving
+
+    pd.read_csv(filepath, ...):
+
+        Purpose: Reads data from a CSV file into a Pandas DataFrame.
+
+        Key parameters: filepath, sep (delimiter), header, names, index_col, encoding, dtype
+
+        Why it's top: The workhorse for loading tabular data, probably the single most used Pandas function.
+
+    pd.read_excel(filepath, ...):
+
+        Purpose: Reads data from an Excel file.
+
+        Key parameters: filepath, sheet_name, header, names, index_col
+
+        Why it's top: Essential for handling data from Excel spreadsheets.
+
+    pd.read_json(filepath, ...):
+
+        Purpose: Reads data from a JSON file or string.
+
+        Key parameters: filepath, orient, dtype
+
+        Why it's top: For working with JSON data.
+
+    pd.to_csv(filepath, ...) (DataFrame method):
+
+        Purpose: Saves a DataFrame to a CSV file.
+
+        Key parameters: filepath, sep, header, index
+
+        Why it's top: How you save your modified data.
+
+    df.to_excel(filepath, ...) (DataFrame method):
+
+        Purpose: Saves a DataFrame to an Excel file.
+
+        Key parameters: filepath, sheet_name, header, index
+
+        Why it's top: Saving data to Excel.
+
+    df.to_json(filepath, ...) (DataFrame method):
+
+        Purpose: Saves a DataFrame to a JSON file or string.
+
+        Key parameters: filepath, orient, indent
+
+        Why it's top: Saving data to JSON
+
+II. DataFrame & Series Inspection & Basic Operations
+
+    df.head(n):
+
+        Purpose: Shows the first n rows of a DataFrame (default is 5).
+
+        Why it's top: Quick inspection of data.
+
+    df.tail(n):
+
+        Purpose: Shows the last n rows of a DataFrame (default is 5).
+
+        Why it's top: Useful for the end of data
+
+    df.info():
+
+        Purpose: Prints a concise summary of a DataFrame, including data types, non-null counts, and memory usage.
+
+        Why it's top: Essential for understanding your DataFrame's structure.
+
+    df.describe():
+
+        Purpose: Generates descriptive statistics (mean, std, min, max, percentiles, etc.) for numeric columns.
+
+        Why it's top: Quick overview of central tendencies and distributions.
+
+    df.shape (attribute):
+
+        Purpose: Returns the dimensions of the DataFrame (number of rows, number of columns) as a tuple.
+
+        Why it's top: Understanding data size.
+
+    df.columns (attribute):
+
+        Purpose: Returns the column labels of the DataFrame as an index object.
+
+        Why it's top: Accessing column names.
+
+    df.index (attribute):
+
+        Purpose: Returns the row labels of the DataFrame as an index object.
+
+        Why it's top: Accessing index labels.
+
+    df.dtypes (attribute):
+
+        Purpose: Returns the data type of each column in the DataFrame.
+
+        Why it's top: Understanding what data types you're working with.
+
+    df.nunique():
+
+        Purpose: Returns the number of unique values per column.
+
+        Why it's top: Useful for quickly understanding the variability of your data.
+
+    df.isna() or df.isnull():
+
+        Purpose: Returns a DataFrame of booleans indicating where values are missing (NaN).
+
+        Why it's top: Necessary for cleaning and handling missing data
+
+    df.dropna():
+
+        Purpose: Removes rows or columns containing missing values.
+
+        Why it's top: Important step in data cleaning
+
+    df.fillna(value):
+
+        Purpose: Fills missing values with a specified value, a dict of values per column or a method such as ffill or bfill.
+
+        Why it's top: Handle missing data by filling it.
+
+III. Data Selection, Filtering & Modification
+
+    df['column_name'] or df.column_name:
+
+        Purpose: Selects a column (Series) from a DataFrame.
+
+        Why it's top: Core functionality for column selection.
+
+    df[['col1', 'col2', ...]]:
+
+        Purpose: Selects multiple columns from a DataFrame.
+
+        Why it's top: Core functionality for column selection.
+
+    df.loc[row_labels, column_labels]:
+
+        Purpose: Accesses a group of rows and columns by labels or boolean array.
+
+        Why it's top: Flexible label-based selection, handling string based index.
+
+    df.iloc[row_positions, column_positions]:
+
+        Purpose: Accesses a group of rows and columns by integer positions.
+
+        Why it's top: Flexible integer position based selection.
+
+    df[df['column'] > some_value] (Boolean indexing):
+
+        Purpose: Filters rows based on a condition.
+
+        Why it's top: Essential for conditional data filtering.
+
+    df.apply(function, axis):
+
+        Purpose: Applies a function along an axis of the DataFrame (row-wise or column-wise).
+
+        Why it's top: Powerful for custom data transformations.
+
+    df['new_column'] = calculation (Assignment):
+
+        Purpose: Creates a new column or modifies an existing one.
+
+        Why it's top: Data enrichment, adding new features
+
+    df.rename(columns=dict, inplace=True/False):
+
+        Purpose: Renames columns or index labels.
+
+        Why it's top: For readability or consistency.
+
+    df.drop(labels, axis=0/1):
+
+        Purpose: Removes rows or columns by label.
+
+        Why it's top: Removing unwanted data.
+
+    df.astype(dtype)
+
+        Purpose: Converts data types in a column
+
+        Why it's top: Essential for making data compatable for further processes
+
+IV. Data Aggregation & Grouping
+
+    df.groupby('column_name').agg({ 'col1': 'sum', 'col2': 'mean' ...}):
+
+        Purpose: Groups data by a column and applies aggregation functions.
+
+        Why it's top: Core for data analysis and summary.
+
+    df.sort_values('column_name', ascending=True/False):
+
+        Purpose: Sorts the DataFrame based on values in one or more columns.
+
+        Why it's top: Essential for data organization and reporting.
+
+    df.value_counts():
+
+        Purpose: Returns the count of unique values in a Series.
+
+        Why it's top: Essential for categorical data analysis
+
+V. Data Transformation
+
+    pd.concat([df1, df2, ...], axis=0/1):
+
+        Purpose: Concatenates DataFrames along an axis (row-wise or column-wise).
+
+        Why it's top: Combining multiple data sources.
+
+    pd.merge(df1, df2, on='column', how='inner/outer/left/right'):
+
+        Purpose: Merges DataFrames using join operations.
+
+        Why it's top: Combining data based on common keys.
+
+    df.pivot_table(values, index, columns, aggfunc):
+
+        Purpose: Creates a pivot table summarizing data.
+
+        Why it's top: Reshaping data for different analysis and summarization.
+
+    df.melt(id_vars, value_vars):
+
+        Purpose: Unpivots or "melts" a DataFrame from wide to long format.
+
+        Why it's top: Reshaping data for different analysis and easier usage.

@@ -47,3 +47,6 @@ print(type(num))
 
 for ch in num:
     print(int(ch))
+
+
+#PRINT('Hello')

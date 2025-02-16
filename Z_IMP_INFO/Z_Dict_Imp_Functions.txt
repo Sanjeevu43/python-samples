@@ -1,3 +1,6 @@
+Note : Before 3.7 dict was unorder, from 3.7 it maintains insertion order, so no need to use OrderedDict
+
+
 1) get(key, default=None): Retrieves the value associated with the given key. If the key doesn't exist, it returns the default value (which is None by default).
     my_dict = {"color": "blue", "size": "medium"}
     value = my_dict.get("color")  # Output: 'blue'

@@ -3,12 +3,12 @@
 from dotenv import load_dotenv,find_dotenv
 import os
 
-env_file = find_dotenv() # return env file
-print('***********************************************************************************************************')
-print("ENV FILE : ",env_file)
+# env_file = find_dotenv() # return env file
+# print('***********************************************************************************************************')
+# print("ENV FILE : ",env_file)
 
-env = load_dotenv() # return bool
-print(env)
+# env = load_dotenv() # return bool
+# print(env)
 
 # once .env loads then we can get env variables
 NAME:str = os.getenv('NAME')

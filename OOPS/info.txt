@@ -1,1 +1,5 @@
 __name, __m1() : name and m1() are private, can use with in class, can't use outside class
+
+__init__ will call automatically when create an object
+
+when you declare instance method first argument should be self

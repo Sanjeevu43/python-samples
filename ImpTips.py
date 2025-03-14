@@ -1,7 +1,7 @@
 import string
 import re # re means regular expression module
 import numpy as np
-from sklearn import metrics
+#from sklearn import metrics
 # To remove special chars in text. string.punctuation contains all special chars
 
 print(string.punctuation)

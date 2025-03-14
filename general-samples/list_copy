@@ -1,7 +1,7 @@
 import copy
 
 # In shallow copy If the list contains mutable objects, 
-# changes made to those objects will affect both the original and the copy.
+# changes made to those objects will affect both the original and the copy (means made changes in copy object or original object).
 
 l1 = [1,2,3,4,[100,200]]
 print(l1)
@@ -11,21 +11,62 @@ print(l1)
 #l2 = l1.copy() # shallow copy
 l2= copy.copy(l1)  # shallow copy
 #l2= copy.deepcopy(l1) # deep copy, changes will effect only in modified object
-l1[4][0] = 50
-l1[0] = 10
+l2[4][0] = 50
+l2[0] = 10
 
 #l2.append(5)
 #l2.append(5)
 print(l1,id(l1))
 print(l2,id(l2))
 
+#Exp1
 dict1 = {'name':'Sanjeev','city':'Blore'}
 dict2 = dict1.copy()
 
-print('dict1= ', dict1)
-print('dict2= ', dict2)
+print('dict1= ', dict1, ':', id(dict1))
+print('dict2= ', dict2, ':', id(dict2))
 
 dict2['city'] = 'Bangalore'
 
 print('dict1= ', dict1)
 print('dict2= ', dict2)
+
+#Exp2
+dict1 = {'name':'Sanjeev','cities':['Blore','Hyd','Chennai']}
+dict2 = dict1.copy()
+
+print('dict1= ', dict1)
+print('dict2= ', dict2)
+
+dict2['cities'][2] = 'Pune'
+
+print('dict1= ', dict1)
+print('dict2= ', dict2)
+
+#Exp3 Deep copy
+dict1 = {'name':'Sanjeev','cities':['Blore','Hyd','Chennai']}
+dict2 = copy.deepcopy(dict1.copy())
+print('***********************************'*3)
+print('dict1= ', dict1)
+print('dict2= ', dict2)
+
+dict2['cities'][2] = 'Pune'
+
+print('dict1= ', dict1)
+print('dict2= ', dict2)
+
+print('*************************** tuple copy *********************')
+
+org_tpl = (1,2,3,[10,20,30])
+shallow_tpl = copy.copy(org_tpl)
+org_tpl[3][0]=15
+print(org_tpl, ':',id(org_tpl))
+print(shallow_tpl, ':',id(shallow_tpl))
+print(org_tpl is shallow_tpl)
+
+d_org_tpl = (1,2,3,[10,20,30])
+d_shallow_tpl = copy.deepcopy(d_org_tpl)
+d_org_tpl[3][0]=19
+print(d_org_tpl, ':',id(d_org_tpl))
+print(d_shallow_tpl, ':',id(d_shallow_tpl))
+print(d_org_tpl is d_shallow_tpl)

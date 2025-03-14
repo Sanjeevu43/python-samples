@@ -19,4 +19,4 @@ print('Length : ',len(name))
 
 msg = 'Hello'
 
-byte_msg = bytes(msg)
+byte_msg = bytes(msg,encoding='utf-8')

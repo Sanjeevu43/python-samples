@@ -1,3 +1,7 @@
+'''In Python, the double underscore prefix (__) has a special meaning known as name mangling. It's primarily intended for use within 
+classes, but it can technically be used outside of classes, though it's highly discouraged and doesn't 
+achieve the intended effect. '''
+
 class access_m1:
     __age = 20
     __name = 'My X'
@@ -15,6 +19,7 @@ class access_m1:
         print('Name :',self.__name)
 
 obj = access_m1(40)
+#print(obj._access_m1__age) #(Access via name mangling - not recommended)
 if __name__ == "__main__":
     obj.m11()
     def m1():

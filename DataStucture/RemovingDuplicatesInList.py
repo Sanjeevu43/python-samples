@@ -9,6 +9,8 @@ print(new_l)
 l = [1,2,3,1,2,4,5,6,3] # 1,2 and 3 dups
 new_l = []
 [new_l.append(item) for item in l if item not in new_l]
+#new_l = [item for item in l if item not in new_l] # no error, but not remove duplicate
+print('************'*3)
 print(new_l)
 
 # Using set

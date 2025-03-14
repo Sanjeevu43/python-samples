@@ -25,3 +25,18 @@ memory_profiler --- Memory Profiler is a pure Python module that uses the psutil
 psutil --- psutil (python system and process utilities) is a cross-platform library for retrieving information on running processes 
            and system utilization (CPU, memory, disks, network, sensors) in Python. It is useful mainly for 
            system monitoring, profiling, limiting process resources and the management of running processes.
+
+openpyxl --- Open Python Excel, to work with Excel sheet
+
+os --- Python OS module provides the facility to establish the interaction between the user and the operating system.
+
+sys --- #The python sys module provides functions and variables which are used to manipulate different parts of the 
+        Python Runtime Environment. It lets us access system-specific parameters and functions.
+        value = sys.argv[0]  # or sys.argv # default argument is current file name
+        value = sys.argv[1] # we need to pass argument value from command line
+
+input --- it is built in function used to read values from command prompt, by default input value is read as string
+          int(input('Please enter age of the person:  '))
+
+from functools import cached_property
+

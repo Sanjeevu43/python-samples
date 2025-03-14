@@ -14,6 +14,7 @@ users = [User('Sanjeevu','abc@gmail.com'),User('Lucky','Lucky@gmail.com')]
 
 for user in users:
     user.getUserInfo()
+    print(id(user))
 
 
 x = 123456

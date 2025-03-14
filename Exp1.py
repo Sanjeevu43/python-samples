@@ -50,3 +50,4 @@ age: int = 30
 print('Age type :',type(age))
 age = 'Sanjeev'
 print('Age type :',type(age))
+

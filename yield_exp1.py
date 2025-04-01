@@ -72,3 +72,18 @@ def add_function(n1:int, n2:int):
 
 res = add_function(n2=10,n1=5)
 print(res)
+
+def gen_(n):
+    print('function called')
+    while n>0:
+        print('Inside while')
+        yield n
+        n-=1
+gen_res = gen_(5)
+print(type(gen_res))
+for n in gen_res:
+    print(n)
+# print(next(gen_res))
+# for n in gen_res:
+#     print('*********')
+#     print(n)

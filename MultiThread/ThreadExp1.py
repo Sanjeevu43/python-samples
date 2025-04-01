@@ -4,7 +4,7 @@ In Python we can create thread in 3 ways
 2) By extending Thread class
 3) Without extending Thread class
 '''
-#1 Creating a thred without class
+#1 Creating a thread without class
 from threading import *
 import multiprocessing
 

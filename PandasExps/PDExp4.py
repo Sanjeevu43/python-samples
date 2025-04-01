@@ -15,6 +15,7 @@ list_of_tuples = list(zip(Name, Age))
 df = pd.DataFrame(list_of_tuples,
                   columns=['Name', 'Age'])
 print(df)
+print(df.shape)
 
 #7:  Creating dataframe from series
 # To create a dataframe from series, we must pass series as argument to DataFrame() function.

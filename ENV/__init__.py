@@ -6,7 +6,7 @@ class D:
 
 def m1():
     print('m1() called')
-    D()
+    #D()
 
 
 if __name__ == '__main__':

@@ -64,6 +64,16 @@ print(type(_values))
 items = d1.items()
 print(items)
 print(type(items))
+print('*********************************************************************************')
+
+d_ = {}
+d_['A']='Apple'
+print(d_)
+#d_.clear()
+d_.update({'B':'Banana'})
+print(d_)
+
+
 
 
         

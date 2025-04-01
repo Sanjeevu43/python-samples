@@ -10,5 +10,4 @@ print(int(datetime.datetime.now().year))
 x = None
 y = None
 z = x | y | "Hai"
-
 print(z)

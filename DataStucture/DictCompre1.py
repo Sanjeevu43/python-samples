@@ -14,7 +14,7 @@ print('Out_dict_1 : ', out_dict_1)
 
 # ***************************************************** #
 
-state = ['Andhra','Telangana','Karnataka','Tamilnadu']
+state = ['Andhra','Telangana','Karnataka','Tamilnadu','Kerala']
 capital = ['Amaravati','Hyd','Blore','Chennai']
 out_dict_2 = {}
 

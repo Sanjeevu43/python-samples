@@ -10,7 +10,7 @@ class MyThread:
 obj = MyThread()
 #t1 = threading.Thread(obj.m1())
 t1 = threading.Thread(target=MyThread().m1)
-t1.start();
+t1.start()
 t1.join()
 print("Done")
 print("Control return to ",threading.current_thread().getName())

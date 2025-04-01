@@ -2,7 +2,7 @@
 x=10
 y=20
 
-z = x<=10 and y<21
+z = x<=10 and y<20
 print(z)
 
 z = x<=10 or y<21
@@ -24,5 +24,6 @@ if s1:
     print('True')
 else:
     print('False')
+    print(f's1 value is : {s1}')
 
 

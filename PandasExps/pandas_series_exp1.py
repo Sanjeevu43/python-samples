@@ -6,7 +6,7 @@ print('Data Type : ',type(ser))
 
 l = [1,2,3,4]
 
-ser = pd.Series(l,)
+ser = pd.Series(l)
 print(ser)
 
 cus_index = [2,3,4,5,6]

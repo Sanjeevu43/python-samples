@@ -38,6 +38,18 @@ print(l1 is l2)
 print(l1 is l3)
 l1=l3
 print(l1 is l3)
+print('********************************************************************************************')
+
+newl_ = [1,2,3,4]
+#newl_[0]=10 # to modify the value
+newl_.append(5)
+newl_.insert(5,6)
+#newl_.extend(7) # TypeError will get
+newl_.extend([7,8,9]) # or newl_.extend((7,8,9)) also ok
+
+print(newl_)
+newl_.clear()
+print(newl_)
 
 
 

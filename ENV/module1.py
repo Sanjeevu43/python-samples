@@ -1,5 +1,5 @@
 
-__all = ('A',)
+__all__ = ["A"]
 
 class A:
     print("Class A")

@@ -9,6 +9,8 @@ print(l)
 print(new_l)
 print(new_ll)
 
-ll = [1,2,3,4]
-
+ll = [1,5,2,4,6,7,3]
 print(min(ll))
+ll.sort()
+ll.reverse()
+print(ll)

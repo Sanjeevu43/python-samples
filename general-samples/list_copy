@@ -45,7 +45,7 @@ print('dict2= ', dict2)
 
 #Exp3 Deep copy
 dict1 = {'name':'Sanjeev','cities':['Blore','Hyd','Chennai']}
-dict2 = copy.deepcopy(dict1.copy())
+dict2 = copy.deepcopy(dict1)
 print('***********************************'*3)
 print('dict1= ', dict1)
 print('dict2= ', dict2)

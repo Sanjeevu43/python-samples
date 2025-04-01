@@ -1,6 +1,8 @@
-Pandas is an open-source library that is made mainly for working with relational or labeled data both easily and intuitively.
+Pandas is an open-source library that is made mainly for working with relational or labeled data both 
+easily and intuitively.
 It provides various data structures and operations for manipulating numerical data and time series. 
-This library is built on top of the NumPy library. Pandas is fast and it has high performance & productivity for users.
+This library is built on top of the NumPy library. Pandas is fast and it has high 
+performance & productivity for users.
 
 Advantages 
  *Fast and efficient for manipulating and analyzing data.
@@ -12,10 +14,14 @@ Advantages
  *Provides time-series functionality.
  *Powerful group by functionality for performing split-apply-combine operations on data sets.
 
-Pandas is a Python library that provides powerful and easy-to-use data structures and functions for data manipulation and analysis. 
-Pandas is built on top of the NumPy library, which is a popular library for scientific computing in Python. 
-Pandas can work with various types of data, such as tabular data, time series data, and multidimensional data. 
-Pandas can also interact with data sources like CSV files, Excel files, databases, and web APIs. 
+Pandas is a Python library that provides powerful and easy-to-use data structures and functions for 
+data manipulation and analysis. 
+Pandas is built on top of the NumPy library, which is a popular library for scientific computing 
+in Python. 
+Pandas can work with various types of data, such as tabular data, time series data, and 
+multidimensional data. 
+Pandas can also interact with data sources like CSV files, Excel files, databases, 
+and web APIs. 
 
 Some of the common tasks that Pandas can help you with are:
 * Reading and writing data from different formats
@@ -27,20 +33,22 @@ Some of the common tasks that Pandas can help you with are:
 * Visualizing and plotting data
 * Performing statistical analysis and machine learning
 Pandas is widely used by data scientists, analysts, and engineers who work with data in Python. 
-Pandas is also integrated with other popular libraries for data science, such as Matplotlib, SciPy, and Scikit-learn
+Pandas is also integrated with other popular libraries for data science, such as Matplotlib, SciPy, 
+and Scikit-learn
 
 Pandas generally provide two data structures for manipulating data, They are:
  1) Series
  2) DataFrame
 
- Series: Pandas Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects, etc.). 
-         The axis labels are collectively called indexes. Pandas Series is nothing but a column in an excel sheet. Labels need not be unique
-         but must be a hashable type. The object supports both integer and label-based indexing and provides a host of methods for performing 
-         operations involving the index.
-         In the real world, a Pandas Series will be created by loading the datasets from existing storage, storage can be SQL Database, 
-         CSV file, an Excel file. Pandas Series can be created from the lists, dictionary, and from a scalar value etc.
+Series:Pandas Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects, etc.). 
+The axis labels are collectively called indexes. Pandas Series is nothing but a column in an excel sheet. Labels need not be unique
+but must be a hashable type. The object supports both integer and label-based indexing and provides a host of methods for performing 
+operations involving the index.
+In the real world, a Pandas Series will be created by loading the datasets from existing storage, storage can be SQL Database, 
+CSV file, an Excel file. Pandas Series can be created from the lists, dictionary, and from a scalar value etc.
 
-Pandas DataFrame: is a two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
+
+DataFrame: is a two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). 
 A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns. Pandas DataFrame consists 
 of three principal components, the data, rows, and columns.
 

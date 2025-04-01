@@ -7,3 +7,4 @@ print(type(t))
 
 t = 'San',40,'Blore'
 name,age,city = t
+print(t)

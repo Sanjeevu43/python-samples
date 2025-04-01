@@ -15,7 +15,7 @@ def config_load(fileName : str=None) -> dict:
     if fileName is None:
         fileName = DEFAULT_CONFIG_FILE
     
-    config.read('C:\\PYTHON-GIT-PROJECT\\python-samples\\config-samples\\test.properties') #C:\PythonExps\SimpleExps\ConfigExps\test.properties
+    config.read('C:\\python-samples\\config-samples\\test.properties') #C:\PythonExps\SimpleExps\ConfigExps\test.properties
     print("META : ")
     print(config.get("META","tune"))
     print(config.sections())

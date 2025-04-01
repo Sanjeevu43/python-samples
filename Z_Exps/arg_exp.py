@@ -9,10 +9,18 @@ def f2(i,*j,k):
 
 f2(10,30,40,k=5)
 
-def f3(i,*j,**k):
-    pass
-
 res = lambda i,*j,k: i+k
-
 print(res(10,20,30,k=5))
-      
+
+def f3(i,*j,**k):
+    print(i,j)
+    print(k)
+
+f3(10,20,30,name="Sanjeevu")   
+
+
+def f4(msg: str='', flag: bool=...):
+    print('Msg = ',msg)
+    print('flag = ',flag)
+
+f4('Hello')

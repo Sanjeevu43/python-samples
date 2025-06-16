@@ -41,3 +41,4 @@ print(p1 == p3)   # Output: False
 
 # my_set = {p1, p2, p3}  #  p1 and p2 are considered the same element, so the set contains only p1 and p3.
 # print(my_set) # Output: {Point(1, 2), Point(3, 4)}
+print(p1)

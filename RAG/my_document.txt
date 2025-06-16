@@ -3,4 +3,9 @@
     The capital of Germany is Berlin.  Berlin has many historical landmarks.
     London is the capital of the United Kingdom.  London is famous for Big Ben.
     Rome is the capital of Italy.  Rome has the Colosseum.
+
+    chunk_size=100 means chunk contains 100 chars
+    
+    
+    , chunk_overlap=0
     

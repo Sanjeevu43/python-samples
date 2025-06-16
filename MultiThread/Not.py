@@ -1,5 +1,5 @@
 
-flag = True
+flag = None
 
 for i in range(5):
     if not flag:

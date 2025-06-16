@@ -2,7 +2,7 @@
 
 def initialization(func):
     print(f'this is initialization function')
-    #func()
+    func()
 
 @initialization
 def db_con():

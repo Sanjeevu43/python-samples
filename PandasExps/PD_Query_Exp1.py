@@ -34,7 +34,7 @@ transaction_date = []
 transaction_amount = []
 address = []
 
-fake_data(10)
+fake_data(5)
 
 df = pd.DataFrame(zip(card_holder_name,card_numner,card_expire,transaction_date,transaction_amount,address)
                   ,columns=['CardHolder Name','Card Number','Expire Date','Tran Date','Tran Amount','Address'])

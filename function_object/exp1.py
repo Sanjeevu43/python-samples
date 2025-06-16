@@ -50,3 +50,22 @@ def create_adder(x):
 add_15 = create_adder(15)
 result = add_15(10) 
 print(result)
+
+##############################################################################
+
+#This is a classic Python "gotcha" related to closures and late binding.
+#The generate function is a closure
+print('*************************************************************************************')
+def functions():
+    result = []
+    for i in range(5):
+        def generate(x,i=i):
+            return x*i
+        result.append(generate)
+    return result
+
+function = functions()
+for f in function:
+    print(f(2))
+        
+

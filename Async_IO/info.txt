@@ -12,10 +12,12 @@ Key Concepts:
   the await keyword and resumed later.
 
   await Keyword: Used inside a coroutine to suspend the execution of the function until the awaited 
-  operation (another coroutine, task, or future) completes. It allows the event loop to switch to other ready-to-run coroutines.
+  operation (another coroutine, task, or future) completes. It allows the event loop to switch to 
+  other ready-to-run coroutines.
 
   Event Loop: The heart of an async program. It's a single-threaded loop that manages and schedules the 
-  execution of coroutines. The event loop monitors for I/O events and switches between coroutines when they're ready to run.
+  execution of coroutines. The event loop monitors for I/O events and switches between coroutines when 
+  they're ready to run.
 
   Task: A wrapper around a coroutine that is managed by the event loop. Tasks are scheduled and executed 
   by the loop.

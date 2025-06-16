@@ -1,0 +1,17 @@
+{
+  "name": "Alice",
+  "age": 30,
+  "city": "New York",
+  "isStudent": false,
+  "courses": [
+    {
+      "title": "History",
+      "credits": 3
+    },
+    {
+      "title": "Math",
+      "credits": 4
+    }
+  ],
+  "address": null
+}

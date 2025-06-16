@@ -17,7 +17,7 @@ value = 'True'
 capitalized_text = value.capitalize()
 print(capitalized_text)
 
-var = None
+var = 0.0
 
 if not var:
     print('If is paased')
